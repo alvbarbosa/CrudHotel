@@ -4,4 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Ninject" Version="3.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel.Contratos\Hotel.Contratos.csproj" />
+    <ProjectReference Include="..\Hotel.Datos\Hotel.Datos.csproj" />
+    <ProjectReference Include="..\Hotel.Entities\Hotel.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

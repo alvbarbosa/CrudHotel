@@ -54,6 +54,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Http, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
@@ -64,14 +65,33 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Hotel.Api\Hotel.Api.csproj">
+      <Project>{72e90475-6469-43dc-a96f-0ce1341cccb8}</Project>
+      <Name>Hotel.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hotel.Bussines\Hotel.Bussines.csproj">
+      <Project>{57c8bc72-2295-40a4-ae0f-f0845a077100}</Project>
+      <Name>Hotel.Bussines</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hotel.Contratos\Hotel.Contratos.csproj">
+      <Project>{5a69a536-e9bf-4c25-9067-c494cb27bbd7}</Project>
+      <Name>Hotel.Contratos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Hotel.Datos\Hotel.Datos.csproj">
       <Project>{fa0625b0-1f01-458f-8d5c-938439bfcde4}</Project>
       <Name>Hotel.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hotel.Dependencies\Hotel.Dependencies.csproj">
+      <Project>{b7ec0545-f831-4ed4-98df-df0990d55d92}</Project>
+      <Name>Hotel.Dependencies</Name>
     </ProjectReference>
     <ProjectReference Include="..\Hotel.Entities\Hotel.Entities.csproj">
       <Project>{ADF0DC5E-3B41-449C-8D86-D2005EEB6005}</Project>
       <Name>Hotel.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

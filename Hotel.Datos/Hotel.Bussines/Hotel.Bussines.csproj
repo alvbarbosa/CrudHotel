@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel.Contratos\Hotel.Contratos.csproj" />
+    <ProjectReference Include="..\Hotel.Dependencies\Hotel.Dependencies.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -14,6 +14,11 @@ namespace Hotel.Datos
     {
         private TContext contexto = new TContext();
 
+        protected GenericRepository()
+        {
+            this.contexto.Configuration.ProxyCreationEnabled = false;
+        }
+
         public TContext Contexto    
         {
             get { return contexto; }
